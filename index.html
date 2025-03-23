@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Restaurantes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestão de Restaurantes</h1>
+        <nav>
+            <ul>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+                <li><a href="#estoque">Estoque</a></li>
+                <li><a href="#relatorios">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cardapio">
+        <h2>Cardápio Digital</h2>
+        <div id="cardapio-list" class="cardapio-grid">
+            <!-- Itens do cardápio serão carregados aqui via JavaScript -->
+        </div>
+    </section>
+
+    <section id="pedidos">
+        <h2>Gestão de Pedidos</h2>
+        <form id="pedido-form">
+            <label for="item">Item:</label>
+            <select id="item" name="item">
+                <!-- Itens do cardápio serão carregados aqui via JavaScript -->
+            </select>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+            <button type="submit">Adicionar Pedido</button>
+        </form>
+        <div id="pedidos-list">
+            <!-- Pedidos serão listados aqui -->
+        </div>
+    </section>
+
+    <section id="estoque">
+        <h2>Gestão de Estoque</h2>
+        <form id="estoque-form">
+            <label for="item-estoque">Item:</label>
+            <input type="text" id="item-estoque" name="item-estoque" required>
+            <label for="quantidade-estoque">Quantidade:</label>
+            <input type="number" id="quantidade-estoque" name="quantidade-estoque" min="0" required>
+            <button type="submit">Adicionar ao Estoque</button>
+        </form>
+        <div id="estoque-list">
+            <!-- Itens do estoque serão listados aqui -->
+        </div>
+    </section>
+
+    <section id="relatorios">
+        <h2>Relatórios</h2>
+        <div id="relatorios-content">
+            <h3>Total de Pedidos: <span id="total-pedidos">0</span></h3>
+            <h3>Valor Total: R$ <span id="valor-total">0.00</span></h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sistema de Gestão de Restaurantes</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
