@@ -3,25 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão de Pedidos</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script defer src="../js/api.js"></script>
+    <title>Pedidos - Sistema de Gestão de Restaurantes</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>🛒 Pedidos</h1>
+        <h1>📦 Gerenciamento de Pedidos</h1>
         <nav>
-            <a href="../index.html">🏠 Início</a>
+            <ul>
+                <li><a href="../index.html">🏠 Início</a></li>
+                <li><a href="menu.html">📖 Cardápio</a></li>
+                <li><a href="pedidos.html" class="active">🛒 Pedidos</a></li>
+                <li><a href="relatorios.html">📊 Relatórios</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Pedidos em Andamento</h2>
-        <ul id="pedidos-list"></ul>
+        <section id="menu-pedidos">
+            <h2>📜 Escolha os itens do cardápio</h2>
+            <ul id="cardapio-list"></ul>
+        </section>
+
+        <section id="pedido-atual">
+            <h2>🛍️ Seu Pedido</h2>
+            <ul id="lista-pedido"></ul>
+            <p id="total-pedido"><strong>Total: R$ 0,00</strong></p>
+            <button id="finalizar-pedido">✅ Finalizar Pedido</button>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Sistema de Gestão de Restaurantes.</p>
+        <p>&copy; 2025 Sistema de Gestão de Restaurantes - Desenvolvido por Gustavo</p>
     </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/pedidos.js"></script>
 </body>
 </html>
