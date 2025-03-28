@@ -1,3 +1,4 @@
+/* Reset e Configurações Gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,42 +7,72 @@ body {
     text-align: center;
 }
 
+/* Estilo do Cabeçalho */
 header {
     background-color: #ff5722;
     color: white;
     padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 15px;
     background: #ff784e;
     border-radius: 5px;
+    transition: background 0.3s;
 }
 
+nav ul li a:hover {
+    background: #e64a19;
+}
+
+nav ul li a.active {
+    background: #d84315;
+}
+
+/* Conteúdo Principal */
 main {
     padding: 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-.banner {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 10px;
-    margin-top: 10px;
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
+section h2 {
+    color: #ff5722;
+    border-bottom: 2px solid #ff5722;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilização das Listas */
 ul {
     list-style: none;
     padding: 0;
@@ -52,10 +83,46 @@ ul li {
     margin: 10px auto;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+#cardapio-list li {
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#cardapio-list li:hover {
+    background: #ffccbc;
+}
+
+/* Pedido Atual */
+#total-pedido {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: right;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Rodapé */
 footer {
     background: #333;
     color: white;
@@ -63,27 +130,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
+    font-size: 0.9em;
 }
-
-h3 {
-    color: #ff5722;
-    margin-top: 20px;
-    text-align: left;
-    padding-left: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background: white;
-    margin: 5px auto;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    text-align: left;
-}
-
