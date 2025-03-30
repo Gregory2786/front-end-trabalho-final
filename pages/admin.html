@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Painel do Administrador</h1>
+        <nav>
+            <ul>
+                <li><a href="menu.html">📜 Cardápio</a></li>
+                <li><a href="pedidos.html">🛒 Pedidos</a></li>
+                <li><a href="admin.html" class="active">⚙️ Admin</a></li>
+                <li><a href="../index.html">🏠 Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <h2>Login de Administrador</h2>
+            <form id="admin-login-form">
+                <label for="admin-user">Usuário:</label>
+                <input type="text" id="admin-user" placeholder="Digite o usuário">
+                
+                <label for="admin-password">Senha:</label>
+                <input type="password" id="admin-password" placeholder="Digite a senha">
+                
+                <button type="submit">Entrar</button>
+                <p id="login-error" class="error-message" style="display: none;">Usuário ou senha incorretos!</p>
+            </form>
+        </section>
+
+        <section id="admin-panel" style="display: none;">
+            <h2>Gerenciamento do Sistema</h2>
+            
+            <div class="admin-options">
+                <button onclick="showSection('gerenciar-cardapio')">🍽️ Gerenciar Cardápio</button>
+                <button onclick="showSection('gerenciar-pedidos')">📦 Gerenciar Pedidos</button>
+                <button onclick="showSection('gerenciar-funcionarios')">👥 Gerenciar Funcionários</button>
+                <button onclick="showSection('configuracoes')">⚙️ Configurações</button>
+            </div>
+
+            <section id="gerenciar-cardapio" class="admin-section">
+                <h3>Gerenciamento do Cardápio</h3>
+                <ul id="admin-cardapio-list" class="item-list"></ul>
+                <form>
+                    <label for="item-nome">Nome do Item:</label>
+                    <input type="text" id="item-nome">
+                    <label for="item-preco">Preço:</label>
+                    <input type="number" id="item-preco">
+                    <button type="submit">Adicionar</button>
+                </form>
+            </section>
+
+            <section id="gerenciar-pedidos" class="admin-section" style="display: none;">
+                <h3>Gerenciamento de Pedidos</h3>
+                <ul id="admin-pedidos-list" class="item-list"></ul>
+                <form>
+                    <label for="pedido-id">ID do Pedido:</label>
+                    <input type="number" id="pedido-id" readonly>
+                    <label for="pedido-cliente">Nome do Cliente:</label>
+                    <input type="text" id="pedido-cliente">
+                    <button type="submit">Editar</button>
+                </form>
+            </section>
+
+            <section id="gerenciar-funcionarios" class="admin-section" style="display: none;">
+                <h3>Gerenciamento de Funcionários</h3>
+                <ul id="admin-funcionarios-list" class="item-list"></ul>
+                <form>
+                    <label for="func-nome">Nome:</label>
+                    <input type="text" id="func-nome">
+                    <label for="func-cargo">Cargo:</label>
+                    <input type="text" id="func-cargo">
+                    <button type="submit">Adicionar</button>
+                </form>
+            </section>
+
+            <section id="configuracoes" class="admin-section" style="display: none;">
+                <h3>Configurações do Restaurante</h3>
+                <form>
+                    <label for="nome-restaurante">Nome do Restaurante:</label>
+                    <input type="text" id="nome-restaurante">
+                    <label for="horario-funcionamento">Horário de Funcionamento:</label>
+                    <input type="text" id="horario-funcionamento">
+                    <button type="submit">Salvar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gestão de Restaurantes</p>
+    </footer>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
