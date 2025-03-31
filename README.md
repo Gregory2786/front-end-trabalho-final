@@ -1,81 +1,118 @@
-Desenvolvido por: Gregory Almeida Silva, Emilha de Souza, Gustavo Rodrigues de Oliveira
+Aqui está o README.md formatado corretamente:  
 
-# Front-End - Trabalho Final
+```md
+# Documentação do Projeto Front-End - Trabalho Final
 
-## Descrição
-Este repositório contém o desenvolvimento do front-end para o trabalho final da disciplina. O projeto tem como objetivo fornecer uma interface interativa e responsiva para os usuários, utilizando tecnologias modernas do desenvolvimento web.
+## Visão Geral
+O projeto é um sistema front-end desenvolvido como trabalho final de disciplina por **Gregory Almeida Silva, Emilha de Souza e Gustavo Rodrigues de Oliveira**. Trata-se de uma aplicação web interativa e responsiva que se comunica com uma API back-end desenvolvida em **Node.js**.
 
-## Ferramentas e Tecnologias Utilizadas
-
-O projeto foi desenvolvido utilizando as seguintes ferramentas e tecnologias:
-
-- **HTML5**: Estruturação da página web.
-- **CSS3**: Estilização e responsividade.
-- **JavaScript (ES6+)**: Manipulação do DOM e requisições assíncronas.
-- **API**: API desenvolvida com Node.Js.
-- **Git/GitHub**: Controle de versão e colaboração.
-
-## Metodologias Utilizadas
-
-- **Mobile-First**: O design e a implementação priorizam dispositivos móveis.
-- **Componentização**: Estrutura modular para melhor manutenção do código.
-- **Requisições Assíncronas (AJAX/Fetch API)**: Comunicação com back-end para carregamento dinâmico de dados.
-
-## Organização e Estrutura do Código
-
-A estrutura do código foi organizada da seguinte forma:
+## Estrutura do Projeto
 
 ```
-/front-end-trabalho-final
-│── index.html        # Página principal do projeto
-│── css/              # Arquivos de estilos
-│   ├── styles.css    # Estilos globais
-│── js/               # Scripts JavaScript
-│   ├── script.js     # Lógica principal do front-end
-│── assets/           # Imagens e outros recursos estáticos
-│── README.md         # Documentação do projeto
+FRON...
+├── css/
+│   ├── styles.css                # Arquivo principal de estilos
+├── images/                       # Pasta de imagens
+│   ├── restaurant.jpg            # Imagem de exemplo
+├── js/                           # Pasta de scripts JavaScript
+│   ├── admin.js                  # Lógica da área administrativa
+│   ├── api.js                    # Comunicação com a API
+│   ├── pedidos.js                # Gerenciamento de pedidos
+│   ├── relatorios.js             # Geração de relatórios
+│   ├── script.js                 # Lógica principal
+├── node_modules/                 # Dependências do Node.js
+├── pages/                        # Páginas HTML do sistema
+│   ├── admin.html                # Página administrativa
+│   ├── menu.html                 # Página do menu
+│   ├── pedidos.html              # Página de pedidos
+│   ├── relatorios.html           # Página de relatórios
+│   ├── index.html                # Página inicial
+├── LICENSE                       # Licença MIT
+├── package-lock.json             # Versões exatas das dependências
+├── package.json                  # Configuração do projeto Node.js
+├── README.md                     # Documentação principal
+├── server.js                     # Arquivo principal do servidor
 ```
 
-- **index.html**: Contém a estrutura principal da interface.
-- **css/**: Pasta contendo os arquivos de estilo.
-- **js/**: Contém os scripts responsáveis pela interação com a página.
-- **assets/**: Pasta para armazenar imagens, ícones e outros arquivos estáticos.
+## Funcionalidades Principais
 
-## Como Executar o Projeto
+### 📌 Área Administrativa (`admin.html`)
+- Gerenciamento completo do sistema
+- Acessível via `admin.js`
 
-1. Clone o repositório:
+### 🛒 Sistema de Pedidos (`pedidos.html`)
+- Interface para criação e acompanhamento de pedidos
+- Lógica implementada em `pedidos.js`
+
+### 📊 Relatórios (`relatorios.html`)
+- Geração de relatórios e análises
+- Implementado em `relatorios.js`
+
+### 🍽️ Menu Interativo (`menu.html`)
+- Exibição dos itens disponíveis
+
+## Tecnologias Utilizadas
+
+### 🔹 Front-end:
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+### 🔹 Back-end:
+- Node.js (API)
+
+### 🔹 Ferramentas:
+- **Git/GitHub** para controle de versão
+- **Metodologia Mobile-First**
+- **Componentização de código**
+
+## 🚀 Como Executar o Projeto
+
+1. **Clone o repositório**:
    ```bash
    git clone https://github.com/Gregory2786/front-end-trabalho-final.git
    ```
-2. Acesse a pasta do projeto:
+
+2. **Instale as dependências**:
    ```bash
-   cd front-end-trabalho-final
+   npm install
    ```
-3. Abra o arquivo `index.html` em um navegador.
 
-## Contribuição
-
-Caso queira contribuir, siga os passos:
-
-1. Fork o repositório.
-2. Crie uma branch para sua feature ou correção de bug:
+3. **Inicie o servidor**:
    ```bash
-   git checkout -b minha-feature
+   node server.js
    ```
-3. Faça commit das suas alterações:
-   ```bash
-   git commit -m "Descrição da alteração"
+
+4. **Acesse no navegador**:
    ```
-4. Faça push para sua branch remota:
-   ```bash
-   git push origin minha-feature
+   http://localhost:3000
    ```
-5. Abra um Pull Request.
 
-## Licença
+## 🔥 Diferenciais da Implementação
 
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+✅ **Estrutura Modular**:
+- Separação clara entre componentes
+- Arquivos JavaScript específicos para cada funcionalidade
 
----
+✅ **API Integrada**:
+- Comunicação completa com o back-end via `api.js`
 
-Este README pode ser atualizado conforme necessário para incluir informações adicionais sobre o projeto.
+✅ **Sistema Completo**:
+- Desde o front-end até a lógica do servidor
+- Inclui áreas administrativas e de relatórios
+
+## 📜 Licença
+O projeto está sob licença **MIT**. Consulte o arquivo `LICENSE` para detalhes.
+
+## 🔮 Possíveis Melhorias Futuras
+
+📌 Implementação de autenticação de usuários  
+📌 Adição de testes automatizados  
+📌 Melhoria na responsividade para diferentes dispositivos  
+📌 Implementação de cache para melhor performance  
+
+---  
+📌 *Esta documentação reflete a estrutura atual do projeto conforme mostrado na imagem, complementada com as informações do README.md original.*
+```
+
+Esse README segue um formato claro e estruturado, com seções bem definidas e elementos visuais para facilitar a leitura. Se precisar de ajustes ou mais detalhes, é só avisar! 🚀
