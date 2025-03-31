@@ -15,15 +15,30 @@
                 <li><a href="../index.html">🏠 Início</a></li>
                 <li><a href="menu.html" class="active">📖 Cardápio</a></li>
                 <li><a href="pedidos.html">🛒 Pedidos</a></li>
-                <li><a href="relatorios.html">📊 Relatórios</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h2>Confira nosso cardápio</h2>
-        <ul id="cardapio-list"></ul>
-    </main>
+         
+        <div class="tabs">
+            <button class="tab-button" onclick="showTab('comida')">Comidas</button>
+            <button class="tab-button" onclick="showTab('bebida')">Bebidas</button>
+          </div>
+        
+          <div id="comida" class="tab-content">
+            <h2>Comidas</h2>
+            <div id="comida-list" class="card-list"></div>
+          </div>
+        
+          <div id="bebida" class="tab-content">
+            <h2>Bebidas</h2>
+            <div id="bebida-list" class="card-list"></div>
+          </div>
+        
+          <script src="../js/app.js"></script>
+        </main>
 
     <footer>
         <p>&copy; 2025 Sistema de Gestão de Restaurantes.</p>
