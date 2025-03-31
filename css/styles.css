@@ -1035,3 +1035,9 @@ canvas {
     font-weight: bold;
     color: #2d6a4f;
   }
+  #finalizarPedido{
+    width: 10%;
+    margin-top: 5%;
+
+
+  }
