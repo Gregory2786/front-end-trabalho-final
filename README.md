@@ -1,6 +1,3 @@
-Aqui está o README.md formatado corretamente:  
-
-```md
 # Documentação do Projeto Front-End - Trabalho Final
 
 ## Visão Geral
@@ -9,7 +6,7 @@ O projeto é um sistema front-end desenvolvido como trabalho final de disciplina
 ## Estrutura do Projeto
 
 ```
-FRON...
+front-end-trabalho-final
 ├── css/
 │   ├── styles.css                # Arquivo principal de estilos
 ├── images/                       # Pasta de imagens
@@ -113,6 +110,3 @@ O projeto está sob licença **MIT**. Consulte o arquivo `LICENSE` para detalhes
 
 ---  
 📌 *Esta documentação reflete a estrutura atual do projeto conforme mostrado na imagem, complementada com as informações do README.md original.*
-```
-
-Esse README segue um formato claro e estruturado, com seções bem definidas e elementos visuais para facilitar a leitura. Se precisar de ajustes ou mais detalhes, é só avisar! 🚀
