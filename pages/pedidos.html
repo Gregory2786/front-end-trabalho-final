@@ -14,30 +14,34 @@
                 <li><a href="../index.html">🏠 Início</a></li>
                 <li><a href="menu.html">📖 Cardápio</a></li>
                 <li><a href="pedidos.html" class="active">🛒 Pedidos</a></li>
-                <li><a href="relatorios.html">📊 Relatórios</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="menu-pedidos">
-            <h2>📜 Escolha os itens do cardápio</h2>
-            <ul id="cardapio-list"></ul>
-        </section>
-
-        <section id="pedido-atual">
-            <h2>🛍️ Seu Pedido</h2>
-            <ul id="lista-pedido"></ul>
-            <p id="total-pedido"><strong>Total: R$ 0,00</strong></p>
-            <button id="finalizar-pedido">✅ Finalizar Pedido</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Sistema de Gestão de Restaurantes</p>
-    </footer>
-
-    <script src="js/api.js"></script>
-    <script src="js/pedidos.js"></script>
+    <div class="container">
+        <h1>Cardápio</h1>
+    
+        <div class="cardapio">
+          <!-- Comida -->
+          <h2>Comidas</h2>
+          <div id="comidas" class="itens">
+            <!-- Itens de comida serão adicionados aqui dinamicamente -->
+          </div>
+    
+          <!-- Bebidas -->
+          <h2>Bebidas</h2>
+          <div id="bebidas" class="itens">
+            <!-- Itens de bebida serão adicionados aqui dinamicamente -->
+          </div>
+        </div>
+    
+        <!-- Carrinho -->
+        <h2>Carrinho</h2>
+        <div id="carrinho"></div>
+        <p id="total">Total: R$ 0,00</p>
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+      </div>
+    
+      <script src="script.js"></script>
 </body>
 </html>

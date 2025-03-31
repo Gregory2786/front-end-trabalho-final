@@ -36,59 +36,16 @@
 
         <section id="admin-panel" style="display: none;">
             <h2>Gerenciamento do Sistema</h2>
-            
-            <div class="admin-options">
-                <button onclick="showSection('gerenciar-cardapio')">🍽️ Gerenciar Cardápio</button>
-                <button onclick="showSection('gerenciar-pedidos')">📦 Gerenciar Pedidos</button>
-                <button onclick="showSection('gerenciar-funcionarios')">👥 Gerenciar Funcionários</button>
-                <button onclick="showSection('configuracoes')">⚙️ Configurações</button>
-            </div>
-
-            <section id="gerenciar-cardapio" class="admin-section">
-                <h3>Gerenciamento do Cardápio</h3>
-                <ul id="admin-cardapio-list" class="item-list"></ul>
-                <form>
-                    <label for="item-nome">Nome do Item:</label>
-                    <input type="text" id="item-nome">
-                    <label for="item-preco">Preço:</label>
-                    <input type="number" id="item-preco">
-                    <button type="submit">Adicionar</button>
-                </form>
-            </section>
+            <button onclick="showSection('gerenciar-pedidos')">
+            📦 Gerenciar Pedidos</button>
 
             <section id="gerenciar-pedidos" class="admin-section" style="display: none;">
                 <h3>Gerenciamento de Pedidos</h3>
                 <ul id="admin-pedidos-list" class="item-list"></ul>
-                <form>
-                    <label for="pedido-id">ID do Pedido:</label>
-                    <input type="number" id="pedido-id" readonly>
-                    <label for="pedido-cliente">Nome do Cliente:</label>
-                    <input type="text" id="pedido-cliente">
-                    <button type="submit">Editar</button>
-                </form>
-            </section>
-
-            <section id="gerenciar-funcionarios" class="admin-section" style="display: none;">
-                <h3>Gerenciamento de Funcionários</h3>
-                <ul id="admin-funcionarios-list" class="item-list"></ul>
-                <form>
-                    <label for="func-nome">Nome:</label>
-                    <input type="text" id="func-nome">
-                    <label for="func-cargo">Cargo:</label>
-                    <input type="text" id="func-cargo">
-                    <button type="submit">Adicionar</button>
-                </form>
-            </section>
-
-            <section id="configuracoes" class="admin-section" style="display: none;">
-                <h3>Configurações do Restaurante</h3>
-                <form>
-                    <label for="nome-restaurante">Nome do Restaurante:</label>
-                    <input type="text" id="nome-restaurante">
-                    <label for="horario-funcionamento">Horário de Funcionamento:</label>
-                    <input type="text" id="horario-funcionamento">
-                    <button type="submit">Salvar</button>
-                </form>
+                <div class="container">
+                    <h1>Pedidos Realizados</h1>
+                    <div id="pedido-list" class="pedido-list"></div>
+                  </div>
             </section>
         </section>
     </main>
