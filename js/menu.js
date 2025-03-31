@@ -22,10 +22,10 @@ function showTab(tabName) {
   async function loadMenu() {
     try {
       // Fazendo a requisição para obter as comidas e bebidas
-      const responseComida = await fetch('....');
+      const responseComida = await fetch('//emilhamg:76JN8gxAGf66rsZ0@cardapio.tjagvkp.mongodb.net/?retryWrites=true&w=majority&appName=cardapio/comer');
       const comidas = await responseComida.json();
       
-      const responseBebida = await fetch('.....');
+      const responseBebida = await fetch('mongodb+srv://emilhamg:76JN8gxAGf66rsZ0@cardapio.tjagvkp.mongodb.net/?retryWrites=true&w=majority&appName=cardapio/beber');
       const bebidas = await responseBebida.json();
   
       // Preencher a lista de comidas

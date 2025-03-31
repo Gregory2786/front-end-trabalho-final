@@ -83,10 +83,10 @@ function finalizarPedido() {
 }
 async function carregarCardapio() {
     try {
-        const responseComidas = await fetch('https://seu-backend.com/api/comidas');
+        const responseComidas = await fetch('https://back-end-trabalho-final-mw9f.vercel.app/cardapio/api/comer');
         const comidas = await responseComidas.json();
         
-        const responseBebidas = await fetch('https://seu-backend.com/api/bebidas');
+        const responseBebidas = await fetch('https://back-end-trabalho-final-mw9f.vercel.app/cardapio/api/beber');
         const bebidas = await responseBebidas.json();
         
         const comidasElement = document.getElementById('comidas');
